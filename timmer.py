@@ -11,7 +11,7 @@ LIMITE= 500  # Umbral de detección de ruido
 
 def detect_noise():
     p = pyaudio.PyAudio()
-    stream = p.open(format=FORMATO, channels=CANALES, rate=RATIO input=True, frames_per_buffer=CHUNK)
+    stream = p.open(format=FORMATO, channels=CANALES, rate=RATIO, input=True, frames_per_buffer=CHUNK)
     
     print("Esperando ruido...")
     
